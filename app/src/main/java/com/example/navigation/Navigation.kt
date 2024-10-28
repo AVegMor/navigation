@@ -63,10 +63,11 @@ fun Screen4(navigationController: NavHostController, name: String) {
             modifier = Modifier
                 .align(Alignment.Center)
                 .clickable { navigationController.navigate(Routes.Pantalla5.createRoute(8) )})
+              //  .clickable { navigationController.navigate(Routes.Pantalla5.route )})
     }
 }
 @Composable
-fun Screen5(navigationController: NavHostController, age: Int) {
+fun Screen5(navigationController: NavHostController, age: Int = 0) {
     Box(modifier = Modifier
         .fillMaxSize()
         .background(Color.Yellow)) {
